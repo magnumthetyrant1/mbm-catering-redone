@@ -1,0 +1,42 @@
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../images/bcg_slide-2.jpg')}
+#slide-2 .hsContent {
+    margin-left: -450px;
+    top: auto;
+}
+#slide-2 h2 {
+    position: fixed;
+    top: 70%;
+}
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('../images/bcg_slide-4.jpg')}
+#slide-4 .hsContent {
+    margin-left: -450px;
+    top: 250px;
+}
+#slide-4 h2 {
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.back-arrow{
+  position:fixed;
+  top: 2px;
+  left:2px;
+  color: $white;
+  background-color: $black;
+  i{
+    color:white;
+  }
+}
+.test + .tooltip > .tooltip-inner {
+      background-color: #8AC007;
+      color: #FFFFFF;
+      border: 1px solid green;
+      padding: 15px;
+      font-size: 20px;
+  }
+  /* Tooltip on right */
+   .test + .tooltip.right > .tooltip-arrow {
+       border-right: 5px solid black;
+   }

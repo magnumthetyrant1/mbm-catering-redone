@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% include './partials/header.html' %}
+
+<div id="contact" class="container-fluid">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+    <h1>Contact Us:</h1>
+    <form novalidate name="myForm"><!-- STARTING FORM TAG -->
+        <br>
+        <div class="group">
+          <input type="text" required name="name" ng-model="name" ng-minlength="4" ng-maxlength="45">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="">Full Name *</label>
+        </div>
+        <div class="group">
+          <input type="text" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="">Email *</label>
+        </div>
+        <div class="group">
+          <input name="name" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label for="">Your Query *</label>
+        </div>
+
+        <input type="submit">
+    </form>
+    </div>
+    <div class="col-md-6"><br>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:400px;width:520px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.quotes.as/'>Quotes.as</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0030d4bd0906b6338b8dfd767a0fbc617f213549'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(-33.93401540000001,18.466690900000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-33.93401540000001,18.466690900000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Find Us</strong><br>5 Scott Road Observatory<br>7925 Cape Town<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+    </div>
+</div>
+{% endblock %}

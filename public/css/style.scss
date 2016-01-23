@@ -1,0 +1,21 @@
+
+/*
+    style.scss
+        - imports the other scss files and gets compiled into style.css
+
+*/
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+@import '../vendors/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import 'variables';
+@import 'mixins';
+@import "footer";
+//@import 'main_header';
+@import 'testimonials';
+@import 'layout';
+@import 'carousel';
+@import 'portfolio';
+@import 'events';
+@import 'contact';
+@import 'success';
+@import 'nav';

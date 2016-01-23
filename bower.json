@@ -1,0 +1,38 @@
+{
+  "name": "mbm-catering",
+  "version": "0.0.0",
+  "authors": [
+    "Max-Andre Zils <zilsmc@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-carousel": "~0.3.12",
+    "angular-formly": "~6.24.23",
+    "angular-formly-templates-bootstrap": "~6.0.0",
+    "api-check": "~7.5.0",
+    "bootstrap": "~3.3.5",
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "normalize": "~1.0.4",
+    "normalize.css": "~3.0.3",
+    "readmore": "~2.0.5",
+    "scrollmagic": "ScrollMagic#~2.0.5",
+    "slick-carousel": "~1.5.8",
+    "modernizr-min": "~3.1.0",
+    "modernizr": "~3.1.0",
+    "arm-galleria": "~1.4.3"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}

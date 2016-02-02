@@ -1,2 +1,4 @@
-var nodemailer = require('nodemailer');
-//TODO: Pull the npm for nodemailer.
+var
+  nodemailer = require('nodemailer'),
+  router     = express.Router()
+;

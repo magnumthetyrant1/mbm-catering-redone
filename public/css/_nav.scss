@@ -1,9 +1,3 @@
-.contentwrapper{
-    background-image: linear-gradient($orange, $grey);
-    img{
-        width: 10%;
-    }
-}
 .headline{
 	padding: 20px;
   font-family: 'Lobster';
@@ -61,14 +55,14 @@ $colDefault     : #000000;
 $colHighlight   : #ecdbff;
 $dropDown       : true;
 .navbar-default {
-  background-color: $bgDefault;
+  //background-color: $bgDefault;
   border-color: $bgHighlight;
   .navbar-brand {
     color: $colDefault;
     &:hover, &:focus {
-      color: $colHighlight; }}
+      color: $bgDefault; }}
   .navbar-text {
-    color: $colDefault; }
+    color: white; }
   .navbar-nav {
     > li {
       > a {

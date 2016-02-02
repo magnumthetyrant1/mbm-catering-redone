@@ -8,11 +8,12 @@ var
     sass        = require('gulp-sass'),
     nodemon     = require('gulp-nodemon'),
     minifyCss   = require('gulp-minify-css'),
-   browserSync = require('browser-sync').create()
+    browserSync = require('browser-sync').create()
 ;
 
 
 // SASS
+//------------------------------------------------------------------------------
 gulp.task('sass', function() {
     gulp.src('./public/css/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -25,6 +26,7 @@ gulp.task('sass:watch', function() {
 
 
 // SERVE server.js using nodemon
+//------------------------------------------------------------------------------
 gulp.task('start', function () {
   nodemon({
     script: 'server.js',
@@ -33,33 +35,14 @@ gulp.task('start', function () {
   });
 });
 
-//  concat js for faster loading time.
-// gulp.task('scripts', function() {
-//   return gulp.src('./public/js/*.js')
-//     .pipe(concat('all.js'))
-//     .pipe(gulp.dest('./dist/'));
-// });
-//
-//  uglify js
-// gulp.task('compress', function() {
-//   return gulp.src('./public/js/*.js')
-//     .pipe(uglify())
-//     .pipe(gulp.dest('./dist'));
-// });
-//
-//  minify css
-// gulp.task('minify-css', function() {
-//   return gulp.src('/public/css/*.css')
-//     .pipe(minifyCss({compatibility: 'ie8'}))
-//     .pipe(gulp.dest('dist'));
-// });
-//
-
-
+// browserSync
+//------------------------------------------------------------------------------
 gulp.task('browser-sync', function() {
   browserSync.init({
     proxy: "http://localhost:3000/"
   });
 });
 
+// Default task
+//------------------------------------------------------------------------------
 gulp.task('default', ['sass:watch', 'start']);

@@ -1,7 +1,7 @@
-'use strict';
 var
   path    = require('path'),
-  swig    = require('swig');
+  swig    = require('swig')
+;
 
 module.exports = function(app){
   app.set('view cache', false);

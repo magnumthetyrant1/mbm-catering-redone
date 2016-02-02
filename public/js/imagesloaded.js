@@ -629,7 +629,7 @@ function defineImagesLoaded( EventEmitter, eventie ) {
       this.jqDeferred = new $.Deferred();
     }
 
-    // HACK check async to allow time to bind listeners
+    // InProgress:20 check async to allow time to bind listeners
     var _this = this;
     setTimeout( function() {
       _this.check();
@@ -701,7 +701,7 @@ function defineImagesLoaded( EventEmitter, eventie ) {
 
   ImagesLoaded.prototype.progress = function( image ) {
     this.hasAnyBroken = this.hasAnyBroken || !image.isLoaded;
-    // HACK - Chrome triggers event before object properties have changed. #83
+    // InProgress:0 - Chrome triggers event before object properties have changed. #83
     var _this = this;
     setTimeout( function() {
       _this.emit( 'progress', _this, image );
@@ -715,7 +715,7 @@ function defineImagesLoaded( EventEmitter, eventie ) {
     var eventName = this.hasAnyBroken ? 'fail' : 'done';
     this.isComplete = true;
     var _this = this;
-    // HACK - another setTimeout so that confirm happens after progress
+    // InProgress:10 - another setTimeout so that confirm happens after progress
     setTimeout( function() {
       _this.emit( eventName, _this );
       _this.emit( 'always', _this );

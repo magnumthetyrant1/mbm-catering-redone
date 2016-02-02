@@ -6713,11 +6713,6 @@ input:focus ~ .highlight {
 .test + .tooltip.right > .tooltip-arrow {
   border-right: 5px solid black; }
 
-.contentwrapper {
-  background-image: linear-gradient(#ffa500, #726c61); }
-  .contentwrapper img {
-    width: 10%; }
-
 .headline {
   padding: 20px;
   font-family: 'Lobster';
@@ -6762,14 +6757,13 @@ input:focus ~ .highlight {
   text-align: center; }
 
 .navbar-default {
-  background-color: #39a74f;
   border-color: #33bf12; }
   .navbar-default .navbar-brand {
     color: #000000; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #ecdbff; }
+      color: #39a74f; }
   .navbar-default .navbar-text {
-    color: #000000; }
+    color: white; }
   .navbar-default .navbar-nav > li > a {
     color: #000000; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {

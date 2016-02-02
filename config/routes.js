@@ -1,8 +1,10 @@
 var
   express = require('express'),
-  app     = express();
+  app     = express()
+;
 
 module.exports = function(app){
+
   // Route for the home page
   //===================================================
   app.get('/', function(req, res){
